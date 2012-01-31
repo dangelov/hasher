@@ -1,0 +1,1 @@
+Hasher is a small Sublime Text 2 Plugin that generates hashes from the selected text. Currently only MD5 is supported.
