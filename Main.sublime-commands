@@ -1,0 +1,7 @@
+[
+    {
+        "caption": "Hasher: MD5",
+        "command": "md5",
+        "args": {}
+    }
+]

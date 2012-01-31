@@ -1,0 +1,251 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fae",
+				"fadeIn"
+			],
+			[
+				"mysql_err",
+				"mysql_error"
+			],
+			[
+				"ad_",
+				"ad_url"
+			],
+			[
+				"mysql_num_",
+				"mysql_num_rows"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 50.0,
+		"selected_items":
+		[
+			[
+				"md5",
+				"Hasher: MD5"
+			],
+			[
+				"package",
+				"Preferences: Browse Packages"
+			],
+			[
+				"rot",
+				"Rot13 Selection"
+			],
+			[
+				"soda",
+				"Preferences: Package Control Settings – Default"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instll",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"SublimeLinter: Enable Background Linting"
+			],
+			[
+				"lin",
+				"SublimeLinter: Enable Load-Save Linting"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"set php",
+				"Set Syntax: PHP"
+			],
+			[
+				"set java",
+				"Set Syntax: JavaScript (Rails)"
+			],
+			[
+				"snip ",
+				"Snippet: Class"
+			],
+			[
+				"snip re",
+				"Snippet: return"
+			],
+			[
+				"snip coo",
+				"Snippet: COOKIE['…']"
+			],
+			[
+				"",
+				"About"
+			]
+		],
+		"width": 588.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/dinoangelov/Sites/foboko/wizard/earn_money.php",
+		"/Users/dinoangelov/Sites/foboko/resources/css/wz_earn_money.less",
+		"/Users/dinoangelov/Sites/foboko/wizard/notes.php",
+		"/Users/dinoangelov/Sites/foboko/resources/js/earn_money.js",
+		"/Users/dinoangelov/Sites/foboko/wizard/template/dynamic/earn_money.php",
+		"/Users/dinoangelov/Library/Application Support/Sublime Text 2/Packages/User/hasher.py",
+		"/Users/dinoangelov/Sites/foboko/ajax_wizard_handler.php",
+		"/Users/dinoangelov/Library/Application Support/Sublime Text 2/Packages/User/Global.sublime-settings",
+		"/Users/dinoangelov/Library/Application Support/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/Users/dinoangelov/Library/Application Support/Sublime Text 2/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/dinoangelov/Library/Application Support/Sublime Text 2/Packages/BracketHighlighter/BracketHighlighter.sublime-settings",
+		"/Users/dinoangelov/Library/Application Support/Sublime Text 2/Packages/User/BracketHighlighter.sublime-settings",
+		"/Users/dinoangelov/Sites/foboko/.htaccess",
+		"/Users/dinoangelov/Sites/foboko/wizard/template/dynamic/ask_help.php",
+		"/Users/dinoangelov/Sites/foboko/wizard/upload_image.php",
+		"/Users/dinoangelov/Sites/foboko/browse.php",
+		"/Users/dinoangelov/Library/Application Support/Sublime Text 2/Packages/Default/Base File.sublime-settings",
+		"/Users/dinoangelov/Library/Application Support/Sublime Text 2/Packages/User/PHP.sublime-settings",
+		"/Users/dinoangelov/Library/Application Support/Sublime Text 2/Packages/User/Distraction Free.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ad_preview",
+			"json_encode",
+			"die",
+			"array_merge"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"earnmon",
+				"wizard/earn_money.php"
+			],
+			[
+				"upload_ima",
+				"wizard/upload_image.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 191.0,
+	"status_bar_visible": true
+}
