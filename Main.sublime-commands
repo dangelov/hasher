@@ -8,5 +8,15 @@
         "caption": "Hasher: SHA1",
         "command": "sha1",
         "args": {}
+    },
+    {
+        "caption": "Hasher: URL Encode",
+        "command": "url_encode",
+        "args": {}
+    },
+    {
+        "caption": "Hasher: URL Decode",
+        "command": "url_decode",
+        "args": {}
     }
 ]

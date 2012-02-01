@@ -1,1 +1,7 @@
-Hasher is a small Sublime Text 2 Plugin that generates hashes from the selected text. Currently only MD5 is supported.
+Hasher is a small Sublime Text 2 Plugin that generates hashes from the selected text. Currently supported:
+MD5
+SHA1
+URL Encode
+URL Decode
+
+More to come.
