@@ -10,6 +10,16 @@
         "args": {}
     },
     {
+        "caption": "Hasher: Base64 Encode",
+        "command": "base64_encode",
+        "args": {}
+    },
+    {
+        "caption": "Hasher: Base64 Decode",
+        "command": "base64_decode",
+        "args": {}
+    },
+    {
         "caption": "Hasher: URL Encode",
         "command": "url_encode",
         "args": {}
@@ -17,6 +27,11 @@
     {
         "caption": "Hasher: URL Decode",
         "command": "url_decode",
+        "args": {}
+    },
+    {
+        "caption": "Hasher: Insert UNIX Timestamp",
+        "command": "current_unix_timestamp",
         "args": {}
     }
 ]
