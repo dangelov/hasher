@@ -9,4 +9,4 @@ Hasher is a small Sublime Text 2 Plugin that generates hashes from the selected 
 * URL Encode
 * URL Decode
 
-More to come.
+To get a list of all the commands, hit Cmd + Shift + P and type "hasher". More to come.
