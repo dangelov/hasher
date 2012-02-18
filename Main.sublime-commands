@@ -20,13 +20,13 @@
         "args": {}
     },
     {
-        "caption": "Hasher: URL Encode",
-        "command": "url_encode",
+        "caption": "Hasher: URI Component Encode",
+        "command": "uri_component_encode",
         "args": {}
     },
     {
-        "caption": "Hasher: URL Decode",
-        "command": "url_decode",
+        "caption": "Hasher: URI Component Decode",
+        "command": "uri_component_decode",
         "args": {}
     },
     {
