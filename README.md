@@ -6,7 +6,7 @@ Hasher is a small Sublime Text 2 Plugin that generates hashes from the selected 
 * SHA1
 * Base64 Encode
 * Base64 Decode
-* URL Encode
-* URL Decode
+* URI Component Encode
+* URI Component Decode
 
 More to come.

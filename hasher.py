@@ -1,5 +1,3 @@
-import string
-import sublime
 import sublime_plugin
 import hashlib
 import urllib
@@ -52,25 +50,26 @@ class Base64DecodeCommand(sublime_plugin.TextCommand):
 			txt = base64.b64decode(selected)
 			self.view.replace(edit, s, txt)
 
-class UrlEncodeCommand(sublime_plugin.TextCommand):
+class UriComponentEncodeCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		for s in self.view.sel():
 			if s.empty():
 				s = self.view.word(s)
 
 			selected = self.view.substr(s)
-			txt = urllib.quote(selected)
+			txt = urllib.quote(selected.encode('utf8'), '')
 			self.view.replace(edit, s, txt)
 
-class UrlDecodeCommand(sublime_plugin.TextCommand):
+class UriComponentDecodeCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		for s in self.view.sel():
 			if s.empty():
 				s = self.view.word(s)
 
 			selected = self.view.substr(s)
-			txt = urllib.unquote(selected)
-			self.view.replace(edit, s, txt)
+			txt = urllib.unquote(selected.encode('utf8'))
+			txt = unicode(txt.decode('utf8'));
+			self.view.replace(edit, s, txt);
 
 class CurrentUnixTimestamp(sublime_plugin.TextCommand):
 	def run(self, edit):
