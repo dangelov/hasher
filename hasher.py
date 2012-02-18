@@ -59,7 +59,7 @@ class UrlEncodeCommand(sublime_plugin.TextCommand):
 				s = self.view.word(s)
 
 			selected = self.view.substr(s)
-			txt = urllib.quote(selected)
+			txt = urllib.quote(selected.encode('utf8'))
 			self.view.replace(edit, s, txt)
 
 class UrlDecodeCommand(sublime_plugin.TextCommand):
@@ -69,8 +69,9 @@ class UrlDecodeCommand(sublime_plugin.TextCommand):
 				s = self.view.word(s)
 
 			selected = self.view.substr(s)
-			txt = urllib.unquote(selected)
-			self.view.replace(edit, s, txt)
+			txt = urllib.unquote(selected.encode('utf8'))
+			txt = unicode(txt.decode('utf8'));
+			self.view.replace(edit, s, txt);
 
 class CurrentUnixTimestamp(sublime_plugin.TextCommand):
 	def run(self, edit):
