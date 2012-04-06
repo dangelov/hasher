@@ -30,6 +30,16 @@
         "args": {}
     },
     {
+        "caption": "Hasher: Entity Encode",
+        "command": "entity_encode",
+        "args": {}
+    },
+    {
+        "caption": "Hasher: Entity Decode",
+        "command": "entity_decode",
+        "args": {}
+    },
+    {
         "caption": "Hasher: Insert UNIX Timestamp",
         "command": "current_unix_timestamp",
         "args": {}
