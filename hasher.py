@@ -3,6 +3,7 @@ import hashlib
 import urllib
 import time
 import base64
+import re
 
 # test
 
@@ -39,7 +40,7 @@ class Base64EncodeCommand(sublime_plugin.TextCommand):
 			selected = self.view.substr(s)
 			txt = base64.b64encode(selected)
 			self.view.replace(edit, s, txt)
-			
+
 class Base64DecodeCommand(sublime_plugin.TextCommand):
 	def run(self, edit):
 		for s in self.view.sel():
@@ -70,6 +71,35 @@ class UriComponentDecodeCommand(sublime_plugin.TextCommand):
 			txt = urllib.unquote(selected.encode('utf8'))
 			txt = unicode(txt.decode('utf8'));
 			self.view.replace(edit, s, txt);
+
+class EntityEncodeCommand(sublime_plugin.TextCommand):
+	def run(self, edit):
+		from htmlentitydefs import codepoint2name as cp2n
+		for s in self.view.sel():
+			if s.empty():
+							s = self.view.word(s)
+			buf = []
+			for pt in xrange(s.begin(), s.end()):
+				ch = self.view.substr(pt)
+				ch_ord = ord(ch)
+				try:
+					ch = '&%s;' % cp2n[ch_ord]
+				except:
+					pass
+				buf.append(ch)
+			self.view.replace(edit, s, ''.join(buf));
+
+class EntityDecodeCommand(sublime_plugin.TextCommand):
+	def run(self, edit):
+		for s in self.view.sel():
+			if s.empty():
+				s = self.view.word(s)
+
+			selected = unicode(self.view.substr(s))
+			import HTMLParser
+			HTMLParser = HTMLParser.HTMLParser()
+			selected = HTMLParser.unescape(selected)
+			self.view.replace(edit, s, selected);
 
 class CurrentUnixTimestamp(sublime_plugin.TextCommand):
 	def run(self, edit):
