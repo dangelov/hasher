@@ -48,7 +48,7 @@ class Base64DecodeCommand(sublime_plugin.TextCommand):
 				s = self.view.word(s)
 
 			selected = self.view.substr(s)
-			txt = base64.b64decode(selected)
+			txt = base64.b64decode(selected).decode('utf-8')
 			self.view.replace(edit, s, txt)
 
 class UriComponentEncodeCommand(sublime_plugin.TextCommand):
