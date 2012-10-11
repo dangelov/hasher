@@ -13,7 +13,7 @@ class Md5Command(sublime_plugin.TextCommand):
 			if s.empty():
 				s = self.view.word(s)
 
-			selected = self.view.substr(s)
+			selected = self.view.substr(s).encode('utf8')
 			m = hashlib.md5()
 			m.update(selected)
 			txt = m.hexdigest()
@@ -25,7 +25,7 @@ class Sha1Command(sublime_plugin.TextCommand):
 			if s.empty():
 				s = self.view.word(s)
 
-			selected = self.view.substr(s)
+			selected = self.view.substr(s).encode('utf8')
 			m = hashlib.sha1()
 			m.update(selected)
 			txt = m.hexdigest()
@@ -37,7 +37,7 @@ class Base64EncodeCommand(sublime_plugin.TextCommand):
 			if s.empty():
 				s = self.view.word(s)
 
-			selected = self.view.substr(s)
+			selected = self.view.substr(s).encode('utf8')
 			txt = base64.b64encode(selected)
 			self.view.replace(edit, s, txt)
 
@@ -48,7 +48,7 @@ class Base64DecodeCommand(sublime_plugin.TextCommand):
 				s = self.view.word(s)
 
 			selected = self.view.substr(s)
-			txt = base64.b64decode(selected).decode('utf-8')
+			txt = base64.b64decode(selected).decode('utf8')
 			self.view.replace(edit, s, txt)
 
 class UriComponentEncodeCommand(sublime_plugin.TextCommand):
