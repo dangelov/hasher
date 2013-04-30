@@ -48,6 +48,11 @@ class Base64DecodeCommand(sublime_plugin.TextCommand):
 				s = self.view.word(s)
 
 			selected = self.view.substr(s)
+
+			# pad to 4 characters
+			if len(selected) % 4 != 0:
+				selected += "=" * (4 - len(selected) % 4)
+
 			txt = base64.b64decode(selected).decode('utf8')
 			self.view.replace(edit, s, txt)
 
