@@ -1,5 +1,7 @@
 # String Hasher
 
+Note: This is the Sublime Text 2 plugin. Please use the more compatible [ST3 branch](https://github.com/dangelov/hasher/tree/ST3) for Sublime Text 3. The ST3 branch will be merged into the master when Sublime Text 3 is out of beta.
+
 Hasher is a small Sublime Text 2 & 3 Plugin that generates hashes from the selected text. Currently supported:
 
 * MD5
