@@ -1,7 +1,5 @@
 # String Hasher
 
-Note: This is the Sublime Text 2 plugin. Please use the more compatible [ST3 branch](https://github.com/dangelov/hasher/tree/ST3) for Sublime Text 3. The ST3 branch will be merged into the master when Sublime Text 3 is out of beta.
-
 Hasher is a small Sublime Text 2 & 3 Plugin that generates hashes from the selected text. Currently supported:
 
 * MD5
@@ -18,15 +16,21 @@ Hasher is a small Sublime Text 2 & 3 Plugin that generates hashes from the selec
 Use _Cmd + Shift + P_ on Mac or _Ctrl + Shift + P_ on Windows and type the command you need. Type _hasher_ to see available commands. More to come.
 
 ## How to install
-#### [Package Control](https://github.com/wbond/sublime_package_control) (Recommended)
-Hasher is included in the default repository channel for [Package Control](https://github.com/wbond/sublime_package_control). Use _Cmd + Shift + P_ on Mac or _Ctrl + Shift + P_ on Windows and type "__install__". Hit enter and pick "__Hasher__" from the list that opens.
+#### [Package Control](https://github.com/wbond/sublime_package_control)
+This is not supported yet. When Sublime Text 3 is released, the ST3 branch will be merged into the master and the ST3 support will be enabled through Package Control.
 
 #### Git Clone
 Clone this repository in to the Sublime Text 2 or 3 "Packages" directory, which is located where ever the
 "Preferences" -> "Browse Packages" option in Sublime Text takes you.
 
+## Thanks to
+- [titoBouzot](https://github.com/titoBouzout) - ST3 compatibility, fixes & additions
+- [earshinov](https://github.com/earshinov) - base64 fixes
+- [alimony](https://github.com/alimony) - Fixes for HTML Entities + enabled support for both ST2 & 3 in a single package
+
+
 ## License
-Copyright (C) 2012 Dino Angelov
+Copyright (C) 2012-2013 Dino Angelov & Contributors
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
