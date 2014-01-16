@@ -17,7 +17,7 @@ Use _Cmd + Shift + P_ on Mac or _Ctrl + Shift + P_ on Windows and type the comma
 
 ## How to install
 #### [Package Control](https://github.com/wbond/sublime_package_control)
-This is not supported yet. When Sublime Text 3 is released, the ST3 branch will be merged into the master and the ST3 support will be enabled through Package Control.
+Just look for _Hasher_ and install.
 
 #### Git Clone
 Clone this repository in to the Sublime Text 2 or 3 "Packages" directory, which is located where ever the
