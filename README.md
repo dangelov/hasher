@@ -1,6 +1,6 @@
 # String Hasher
 
-Hasher is a small Sublime Text 2 & 3 Plugin that generates hashes from the selected text. Currently supported:
+Hasher is a small Sublime Text 2 & 3 Plugin that generates hashes from the selected text and some miscellaneous **Unicode aware** string conversions. Currently supported:
 
 * MD5
 * SHA1
@@ -10,6 +10,7 @@ Hasher is a small Sublime Text 2 & 3 Plugin that generates hashes from the selec
 * URI Component Decode
 * Entity Encode
 * Entity Decode
+* Unicode Escape
 
 ## Key bindings
 
