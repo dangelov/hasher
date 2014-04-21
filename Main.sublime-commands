@@ -40,6 +40,11 @@
         "args": {}
     },
     {
+        "caption": "Hasher: Unicode Escape",
+        "command": "unicode_escape",
+        "args": {}
+    },
+    {
         "caption": "Hasher: Insert UNIX Timestamp",
         "command": "current_unix_timestamp",
         "args": {}
