@@ -50,6 +50,11 @@
                 "args": {}
             },
             {
+                "caption": "Unicode Unescape",
+                "command": "unicode_unescape",
+                "args": {}
+            },
+            {
                 "caption": "Insert UNIX Timestamp",
                 "command": "current_unix_timestamp",
                 "args": {}
