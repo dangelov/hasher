@@ -4,6 +4,10 @@ Hasher is a small Sublime Text 2 & 3 Plugin that generates hashes from the selec
 
 * MD5
 * SHA1
+* SHA256
+* SHA384
+* SHA512
+* NTLM
 * Base64 Encode
 * Base64 Decode
 * URI Component Encode

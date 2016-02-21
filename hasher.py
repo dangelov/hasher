@@ -42,6 +42,53 @@ class Sha1Command(sublime_plugin.TextCommand):
             self.view.replace(edit, s, txt)
 
 
+class Sha256Command(sublime_plugin.TextCommand):
+    def run(self, edit):
+        for s in self.view.sel():
+            if s.empty():
+                s = self.view.word(s)
+            selected = self.view.substr(s).encode('utf-8')
+            m = hashlib.sha256()
+            m.update(selected)
+            txt = m.hexdigest()
+            self.view.replace(edit, s, txt)
+
+
+class Sha384Command(sublime_plugin.TextCommand):
+    def run(self, edit):
+        for s in self.view.sel():
+            if s.empty():
+                s = self.view.word(s)
+            selected = self.view.substr(s).encode('utf-8')
+            m = hashlib.sha384()
+            m.update(selected)
+            txt = m.hexdigest()
+            self.view.replace(edit, s, txt)
+
+
+class Sha512Command(sublime_plugin.TextCommand):
+    def run(self, edit):
+        for s in self.view.sel():
+            if s.empty():
+                s = self.view.word(s)
+            selected = self.view.substr(s).encode('utf-8')
+            m = hashlib.sha512()
+            m.update(selected)
+            txt = m.hexdigest()
+            self.view.replace(edit, s, txt)
+
+
+class NtlmCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        for s in self.view.sel():
+            if s.empty():
+                s = self.view.word(s)
+            selected = str(self.view.substr(s))
+            m = hashlib.new('md4', selected.encode('utf-16le')).digest()
+            txt = str(binascii.hexlify(m)).upper().split('\'')[1]
+            self.view.replace(edit, s, txt)
+
+
 class Base64EncodeCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         for s in self.view.sel():

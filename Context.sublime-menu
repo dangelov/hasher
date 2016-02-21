@@ -15,6 +15,26 @@
                 "args": {}
             },
             {
+                "caption": "SHA256",
+                "command": "sha256",
+                "args": {}
+            },
+            {
+                "caption": "SHA384",
+                "command": "sha384",
+                "args": {}
+            },
+            {
+                "caption": "SHA512",
+                "command": "sha512",
+                "args": {}
+            },
+            {
+                "caption": "NTLM",
+                "command": "ntlm",
+                "args": {}
+            },
+            {
                 "caption": "Base64 Encode",
                 "command": "base64_encode",
                 "args": {}
