@@ -126,6 +126,13 @@ class UnicodeEscapeCommand(sublime_plugin.TextCommand):
             selected = self.view.substr(s)
             self.view.replace(edit, s, selected.encode('ascii', 'backslashreplace').decode('utf-8'))
 
+class UnicodeUnescapeCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        for s in self.view.sel():
+            if s.empty():
+                s = self.view.word(s)
+            selected = self.view.substr(s)
+            self.view.replace(edit, s, bytes(selected, 'utf8').decode('unicode_escape'))
 
 class CurrentUnixTimestamp(sublime_plugin.TextCommand):
     def run(self, edit):
