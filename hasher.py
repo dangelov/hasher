@@ -42,6 +42,54 @@ class Sha1Command(sublime_plugin.TextCommand):
             self.view.replace(edit, s, txt)
 
 
+class Sha224Command(sublime_plugin.TextCommand):
+    def run(self, edit):
+        for s in self.view.sel():
+            if s.empty():
+                s = self.view.word(s)
+            selected = self.view.substr(s).encode('utf-8')
+            m = hashlib.sha224()
+            m.update(selected)
+            txt = m.hexdigest()
+            self.view.replace(edit, s, txt)
+
+
+class Sha256Command(sublime_plugin.TextCommand):
+    def run(self, edit):
+        for s in self.view.sel():
+            if s.empty():
+                s = self.view.word(s)
+            selected = self.view.substr(s).encode('utf-8')
+            m = hashlib.sha256()
+            m.update(selected)
+            txt = m.hexdigest()
+            self.view.replace(edit, s, txt)
+
+
+class Sha384Command(sublime_plugin.TextCommand):
+    def run(self, edit):
+        for s in self.view.sel():
+            if s.empty():
+                s = self.view.word(s)
+            selected = self.view.substr(s).encode('utf-8')
+            m = hashlib.sha384()
+            m.update(selected)
+            txt = m.hexdigest()
+            self.view.replace(edit, s, txt)
+
+
+class Sha512Command(sublime_plugin.TextCommand):
+    def run(self, edit):
+        for s in self.view.sel():
+            if s.empty():
+                s = self.view.word(s)
+            selected = self.view.substr(s).encode('utf-8')
+            m = hashlib.sha512()
+            m.update(selected)
+            txt = m.hexdigest()
+            self.view.replace(edit, s, txt)
+
+
 class Base64EncodeCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         for s in self.view.sel():
@@ -140,4 +188,4 @@ class CurrentUnixTimestamp(sublime_plugin.TextCommand):
             txt = time.asctime(time.gmtime())
             txt = time.ctime()
             txt = "%.0f" % round(time.time(), 3)
-            self.view.replace(edit, s, txt)
+            self.view.replace(edit, s, txt) 
