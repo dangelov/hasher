@@ -4,6 +4,7 @@ Hasher is a small Sublime Text 2 & 3 Plugin that generates hashes from the selec
 
 * MD5
 * SHA1
+* SHA224
 * SHA256
 * SHA384
 * SHA512
@@ -23,74 +24,7 @@ Use _Cmd + Shift + P_ on Mac or _Ctrl + Shift + P_ on Windows and type the comma
 
 ## Hasher commands in the Context Menu
 
-IF you wish to add hasher commands to the context menu, you may add the following to the end of your User/Context.sublime-menu
-
-```
-[
-	{ "caption": "-" },
-	{
-		"caption": "Hasher",
-		"children":
-		[
-			{
-				"caption": "MD5",
-				"command": "md5",
-				"args": {}
-			},
-			{
-				"caption": "SHA1",
-				"command": "sha1",
-				"args": {}
-			},
-			{
-				"caption": "Base64 Encode",
-				"command": "base64_encode",
-				"args": {}
-			},
-			{
-				"caption": "Base64 Decode",
-				"command": "base64_decode",
-				"args": {}
-			},
-			{
-				"caption": "URI Component Encode",
-				"command": "uri_component_encode",
-				"args": {}
-			},
-			{
-				"caption": "URI Component Decode",
-				"command": "uri_component_decode",
-				"args": {}
-			},
-			{
-				"caption": "Entity Encode",
-				"command": "entity_encode",
-				"args": {}
-			},
-			{
-				"caption": "Entity Decode",
-				"command": "entity_decode",
-				"args": {}
-			},
-			{
-				"caption": "Unicode Escape",
-				"command": "unicode_escape",
-				"args": {}
-			},
-			{
-				"caption": "Unicode Unescape",
-				"command": "unicode_unescape",
-				"args": {}
-			},
-			{
-				"caption": "Insert UNIX Timestamp",
-				"command": "current_unix_timestamp",
-				"args": {}
-			}
-		]
-	}
-]
-```
+IF you wish to add hasher commands to the context menu, see this [wiki entry](https://github.com/dangelov/hasher/wiki/Context-menu-instructions).
 
 ## How to install
 #### [Package Control](https://github.com/wbond/sublime_package_control)
@@ -105,6 +39,8 @@ Clone this repository in to the Sublime Text 2 or 3 "Packages" directory, which 
 - [earshinov](https://github.com/earshinov) - base64 fixes
 - [alimony](https://github.com/alimony) - Fixes for HTML Entities + enabled support for both ST2 & 3 in a single package
 - [ohaucke](https://github.com/ohaucke) - Context menu for the included commands
+- [alphaskade](https://github.com/alphaskade) - SHA256, SHA384, SHA512 and NTLM Hashing
+- [komaflash](https://github.com/komaflash) - SHA224, SHA256, SHA384 and SHA512
 
 ## License
 Copyright (C) 2012-2013 Dino Angelov & Contributors
