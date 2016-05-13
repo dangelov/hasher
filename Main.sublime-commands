@@ -30,6 +30,11 @@
         "args": {}
     },
     {
+        "caption": "Hasher: NTLM",
+        "command": "ntlm",
+        "args": {}
+    },
+    {
         "caption": "Hasher: Base64 Encode",
         "command": "base64_encode",
         "args": {}
@@ -74,4 +79,4 @@
         "command": "current_unix_timestamp",
         "args": {}
     }
-] 
+]

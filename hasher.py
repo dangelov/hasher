@@ -90,6 +90,17 @@ class Sha512Command(sublime_plugin.TextCommand):
             self.view.replace(edit, s, txt)
 
 
+class NtlmCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        for s in self.view.sel():
+            if s.empty():
+                s = self.view.word(s)
+            selected = str(self.view.substr(s))
+            m = hashlib.new('md4', selected.encode('utf-16le')).digest()
+            txt = str(binascii.hexlify(m)).upper().split('\'')[1]
+            self.view.replace(edit, s, txt)
+
+
 class Base64EncodeCommand(sublime_plugin.TextCommand):
     def run(self, edit):
         for s in self.view.sel():
@@ -188,4 +199,4 @@ class CurrentUnixTimestamp(sublime_plugin.TextCommand):
             txt = time.asctime(time.gmtime())
             txt = time.ctime()
             txt = "%.0f" % round(time.time(), 3)
-            self.view.replace(edit, s, txt) 
+            self.view.replace(edit, s, txt)
