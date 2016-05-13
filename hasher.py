@@ -1,4 +1,5 @@
 import sublime_plugin
+import binascii
 import hashlib
 try:
     from urllib import quote as urlquote
