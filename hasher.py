@@ -1,4 +1,5 @@
 import sublime_plugin
+import binascii
 import hashlib
 try:
     from urllib import quote as urlquote
@@ -97,7 +98,12 @@ class NtlmCommand(sublime_plugin.TextCommand):
                 s = self.view.word(s)
             selected = str(self.view.substr(s))
             m = hashlib.new('md4', selected.encode('utf-16le')).digest()
-            txt = str(binascii.hexlify(m)).upper().split('\'')[1]
+            if(type(m) is str):
+                txt = str(binascii.hexlify(m)).upper()
+            elif(type(m) is bytes):
+                txt = str(binascii.hexlify(m)).split('\'')[1].upper()
+            else:
+                txt = s
             self.view.replace(edit, s, txt)
 
 
